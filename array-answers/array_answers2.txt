@@ -1,0 +1,100 @@
+array_answers
+
+patriots = ['Tom Brady', 'Julian Edelman', 'Rob Gronkowski', 'LeGarrette Blount', 'Chris Hogan', 'Nate Solder']
+num = [1, 6, 123, 65, 12, 89, 1264]
+
+1) Find the value of the first element each array
+patriots.first
+patriots[0]
+
+2) Find the value of the last element each array
+patriots.last
+patriots[patriots.length-1]
+
+3) Count the number of array elements in both arrays
+patriots.count
+patriots.length
+
+4) Take the num array and divide every element by 3
+num.map { |num| num/3 }
+
+5) Insert “Danny Amendola” in between Tom Brady and Julian Edelman
+patriots.insert(1, "Danny Amendola")
+
+6) Write a statement that determines if the patriots array contains “Martellus Bennett”
+patriots.include?("Martellus Bennett")
+
+7) Add 56 to the end of the num array
+num << 56
+num.push(56)
+
+8) Delete Rob Gronkowski
+patriots.delete("Rob Gronkowski")
+
+9) Create another array of coaches with Bill Belichick and Josh McDaniels and then join it to the end of patriots array
+creating coaches array: coaches = ["Bill Belichick", "Josh 	McDaniels"]
+adding coaches array to end: patriots + coaches
+							 patriots << coaches
+							 patriots.push(coaches)
+
+10) Delete all index position 3 from both arrays
+patriots.delete_at(3)
+num.delete_at(3)
+
+11) Insert “Vishal Sunak” into position 3 of patriots array
+patriots.insert(3, "Vishal Sunak")
+
+12) Use map and multiply every element in the num array by 2.164
+	num.map { |num| 2.164*num }
+
+13) See what happens when you try to multiply the patriots array by 5. Why does this happen?
+patriots.map { |patriots| 5*patriots }
+TypeError: String can't be coerced into Fixnum
+This happens becuase the patriots array contains strings which cannot be multiplied by integers
+
+14) Take the num array and return only those values that are bigger than 50
+num.keep_if { |num| num > 50 }
+num.select { |num| num > 50 }
+
+15) Take the num array and return only the positions of those that are bigger than 50
+num.map { |num| num>50 }
+
+16) Add the number “12” to the beginning of each element in the patriots so “12Julian Edelman” is what I’m looking for
+patriots.map { |patriots| "12"+patriots }
+
+17) Add “is the greatest” to the end of each element in the patriots array so “Rob Gronkowski is the greatest”
+patriots.map { |patriots| patriots+"is the greatest" }
+
+18) Sum the elements of the num array that are divisible by 4
+Solve w/ loops
+
+19) Print out on a separate line each element of both arrays
+num.each{|a| p a}
+patriots.each{|a| p a}
+
+20) Delete every other element in the num array (6, 65, 89) all get deleted
+Solve w/ loops
+
+21) Reverse the order of each element in both arrays… so the num array will start with 1264 and the patriots with “Nate Solder”
+patriots.reverse_each
+
+22) We’re doing a 2 on 2 drill for the Patriots during practice. Can you help coach figure out all the unique 2 player combinations?
+patriots.combination(2).to_a
+
+23) Sort the num array lowest to highest by element value
+num.sort { |x,y| x <=> y }
+
+24) Sort the num array highest to lowest by element value
+num.sort { |x,y| y <=> x }
+
+25) Return the biggest value of the num array
+num.max
+
+26) Return the smallest value of the num array
+num.min
+
+27) Sum the entire num array, what’s the value?
+num.each {|a| sum = sum + a}
+
+28) Figure out all the unique combinations of 3 number pairs for the num array
+num.combination(3).to_a

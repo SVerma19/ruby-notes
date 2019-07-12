@@ -1,0 +1,33 @@
+Terminal/Linux Commands:
+
+Getting to code directory:
+
+Open iTerm2
+"cd code" --> Changes the directly to "code"
+
+Get out of any directory:
+"cd .."
+
+Make a folder:
+"mkdir {name}"
+
+List what's in a directory:
+"ls" --> use this by default
+"ls -l" --> Using a - meaning that its ls command plus another function, this is a flag
+
+Delete a directory:
+"rm -rf {name}" --> The entire directly will be deleted and everything inside it
+
+Auto-complete:
+Access this by using the tab
+
+When naming files/folder, we use _... test_two or test_2
+
+History:
+Up arrow
+
+Clean up the terminal window:
+clear
+
+Open any text file using sublime text from the terminal
+subl {filename}

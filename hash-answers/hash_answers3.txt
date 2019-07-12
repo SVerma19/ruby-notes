@@ -1,0 +1,52 @@
+hash_answers
+
+players = {'Tom Brady' => 12, 'Rob Gronkowski' => 87, 'Danny Amendola' => 80, 'Julian Edelman' => 11, 'Nate Solder' => 77, 'Dion Lewis' => 33}
+
+0) Return Dion Lewis number
+players["Dion Lewis"]
+
+1) Return all the keys of the hash
+players.keys
+
+2) Return all the values of the hash
+players.values
+
+3) Return all keys sorted alphabetically A to Z
+players.keys.sort
+
+4) Return all numbers sorted smallest to largest
+players.values.sort
+
+5) Add a new key:value pair on the end for Chris Hogan, 15
+players[key:value] << "Chris Hogan" => 15
+players.new("Chris Hogan" => 15)
+
+6) Delete Danny Amendola from the hash
+players.delete("Danny Amendola")
+
+7) For each key, print out each value on a separate line
+players.each_value {|value| puts value }
+
+8) Return the length of players
+players.length
+
+9) Research the delete_if and delete any keys and return playes that have a value less than 75
+players.delete_if { |k,v| v > 75 }
+
+10) Create a hash called “nfl_teams” and make a hash called “green_bay” and fill it up with players and their jersey numbers of your choice. Rename the original players array to “patriots” and now figure out a way to set the value of “nfl_teams” to be nfl_teams = {patriots { …}, green_bay {...}}
+Hashes:
+1: green_bay = {"Aaron Rodgers" => 12, "Haha Clinton-Dix" => 21, "Jared Cook" => 89, "Jordy Nelson" => 87, "Clay Matthews" => 52, "Randall Cobb" => 18}
+2: patriots = {'Tom Brady' => 12, 'Rob Gronkowski' => 87, 'Danny Amendola' => 80, 'Julian Edelman' => 11, 'Nate Solder' => 77, 'Dion Lewis' => 33}
+Command:
+
+
+
+11) Take the new green_bay hash and merge it with the original players array above
+
+12) Look at “values_at” method and return the values of Tom Brady and Julian Edelman and then calculate the length of the array returned
+
+13) Sum all the values in the players hash
+
+14) Search through players hash for Tom Brady and see what it returns. Then do the search again on the players hash for Aaron Rodgers
+
+15) Right now the array stores only 1 piece of information, the jersey number. How would you be able to add their position so Tom Brady would have 2 values - 12 and Quarterback. Use what you know about hashes to define multiple values and update players array with positions

@@ -1,0 +1,39 @@
+multi-dimensional array_answers
+
+players = [['Tom Brady', 'Julian Edelman', 'Rob Gronkowski'], ['LeGarrette Blount', 'Chris Hogan', 'Nate Solder'],['Aaron Rodgers', 'Victor Cruz', 'Chris Johnson']]
+
+1) Show me all players in Row 0
+players[0]
+
+2) Take every element in the array and add “ is the best”
+MAP?
+
+3) Add a 4th row with 3 players of your choice to the first row
+players << ["Jordy Nelson", "Matt Forte", "LeSean McCoy"]
+
+4) Delete the row with Nate Solder
+players.delete(players[1])
+
+5) Return me the row and column for “Aaron Rodgers”
+MAP?
+
+6) Change Julian Edelman to Danny Amendola
+players[0][1] = "Danny Amendola"
+
+7) Show me all players in Column 0
+UNIQUE TO 2D ARRAY
+
+8) Print out all values in the array on a separate line
+players.each{|a| p a}
+
+9) Transpose all the rows into columns
+UNIQUE TO 2D ARRAY
+
+10) Give me a count of the total number of elements in the 2D array
+UNIQUE TO 2D ARRAY
+
+11) Return any elements that begin with the letter C
+MAP?
+
+12) Return only elements that have the word Victor
+MAP?

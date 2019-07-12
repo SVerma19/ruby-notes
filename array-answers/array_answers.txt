@@ -1,0 +1,47 @@
+array_answers
+
+patriots = ['Tom Brady', 'Julian Edelman', 'Rob Gronkowski', 'LeGarrette Blount', 'Chris Hogan', 'Nate Solder']
+num = [1, 6, 123, 65, 12, 89, 1264]
+
+1) Find the value of the first element each array
+patriots.first
+patriots[0]
+
+2) Find the value of the last element each array
+patriots.last
+patriots[patriots.length-1]
+
+3) Count the number of array elements in both arrays
+patriots.count
+patriots.length
+
+4) Take the num array and divide every element by 3
+num.map { |num| num/3 }
+
+5) Insert “Danny Amendola” in between Tom Brady and Julian Edelman
+patriots.insert(1, "Danny Amendola")
+
+6) Write a statement that determines if the patriots array contains “Martellus Bennett”
+patriots.include?("Martellus Bennett")
+
+7) Add 56 to the end of the num array
+num << 56
+
+8) Delete Rob Gronkowski
+patriots.delete("Rob Gronkowski")
+
+9) Create another array of coaches with Bill Belichick and Josh McDaniels and then join it to the end of patriots array
+creating coaches array: coaches = ["Bill Belichick", "Josh McDaniels"]
+adding coaches array to end: patriots << coaches
+
+10) Delete all index position 3 from both arrays
+patriots.delete_at(3)
+num.delete_at(3)
+
+11) Insert “Vishal Sunak” into position 3 of patriots array
+patriots.insert(3, "Vishal Sunak")
+
+12) a. Use map and multiply every element in the num array by 2.164
+	   num.map { |num| 2.164*num }
+	b. Change Chris Hogan to “Hogan’s Heroes”
+	
